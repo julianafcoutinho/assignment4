@@ -13,6 +13,9 @@
 		A3E862CC2995D37600E936A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3E862CA2995D37600E936A2 /* Main.storyboard */; };
 		A3E862CE2995D37F00E936A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E862CD2995D37F00E936A2 /* Assets.xcassets */; };
 		A3E862D12995D37F00E936A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3E862CF2995D37F00E936A2 /* LaunchScreen.storyboard */; };
+		A3E862D92995D5A200E936A2 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E862D82995D5A200E936A2 /* Recipe.swift */; };
+		A3E862DB2995D5CA00E936A2 /* RecipeLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E862DA2995D5CA00E936A2 /* RecipeLogic.swift */; };
+		A3E862DD2995E56E00E936A2 /* RecipeSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E862DC2995E56E00E936A2 /* RecipeSteps.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		A3E862CD2995D37F00E936A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3E862D02995D37F00E936A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3E862D22995D37F00E936A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3E862D82995D5A200E936A2 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		A3E862DA2995D5CA00E936A2 /* RecipeLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeLogic.swift; sourceTree = "<group>"; };
+		A3E862DC2995E56E00E936A2 /* RecipeSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSteps.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 		A3E862C32995D37600E936A2 /* Assignment4 */ = {
 			isa = PBXGroup;
 			children = (
+				A3E862DC2995E56E00E936A2 /* RecipeSteps.swift */,
+				A3E862D82995D5A200E936A2 /* Recipe.swift */,
+				A3E862DA2995D5CA00E936A2 /* RecipeLogic.swift */,
 				A3E862C42995D37600E936A2 /* AppDelegate.swift */,
 				A3E862C62995D37600E936A2 /* SceneDelegate.swift */,
 				A3E862C82995D37600E936A2 /* ViewController.swift */,
@@ -141,6 +150,9 @@
 				A3E862C92995D37600E936A2 /* ViewController.swift in Sources */,
 				A3E862C52995D37600E936A2 /* AppDelegate.swift in Sources */,
 				A3E862C72995D37600E936A2 /* SceneDelegate.swift in Sources */,
+				A3E862DB2995D5CA00E936A2 /* RecipeLogic.swift in Sources */,
+				A3E862D92995D5A200E936A2 /* Recipe.swift in Sources */,
+				A3E862DD2995E56E00E936A2 /* RecipeSteps.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
