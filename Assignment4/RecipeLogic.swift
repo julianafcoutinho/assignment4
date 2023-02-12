@@ -10,14 +10,14 @@ import Foundation
 struct RecipeLogic {
     
     let recipe = [
-        Recipe("brownies", true, "sweet", "chocolate"),
-        Recipe("frangipane tart", true, "sweet", "fruit"),
-        Recipe("pao de queijo", true, "savory", "vegeterian"),
-        Recipe("pretzel hot dogs", true, "savory", "meat"),
-        Recipe("panna cotta, mousse", false, "sweet", "chocolate"),
-        Recipe("banana pudding, panna cotta, truffle", false, "sweet", "fruit"),
-        Recipe("cheese dip", false, "savory", "vegetarian"),
-        Recipe("placeholder", false, "savory", "meat"),
+        Recipe("s'mores brownies", true, "sweet", "chocolate", "brownies"),
+        Recipe("citrus upside down cake", true, "sweet", "fruit", "citrus"),
+        Recipe("pao de queijo", true, "savory", "vegetarian", "paodequeijo"),
+        Recipe("maple bacon biscuits", true, "savory", "meat", "biscuits"),
+        Recipe("chocolate mousse", false, "sweet", "chocolate", "mousse"),
+        Recipe("trifle", false, "sweet", "fruit", "trifle"),
+        Recipe("arancini", false, "savory", "vegetarian", "arancini"),
+        Recipe("carne seca risotto", false, "savory", "meat", "risotto"),
     ]
     
     let recipeStep = [
@@ -61,18 +61,17 @@ struct RecipeLogic {
         }
     }
         
-        func getRecipe(_ bake: Bool, _ type: String, _ ing: String) -> String {
-            var recipeName = ""
+        func getRecipe(_ bake: Bool, _ type: String, _ ing: String) -> Recipe? {
             for recipes in recipe {
                 if recipes.baked == bake {
                     if recipes.recipeType == type {
                         if recipes.ingredient == ing {
-                            recipeName = recipes.recipeName
+                            return recipes
                         }
                     }
                 }
             }
-            return recipeName
+            return nil
         }
     }
     

@@ -19,27 +19,31 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cakePour" translatesAutoresizingMaskIntoConstraints="NO" id="Eyw-LG-0md">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Xcm-ZY-ZSk">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Xcm-ZY-ZSk">
                                 <rect key="frame" x="25" y="74" width="343" height="763"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="lue-cM-Vb1">
+                                    <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="lue-cM-Vb1">
                                         <rect key="frame" x="1.6666666666666572" y="0.0" width="339.66666666666674" height="257"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you hungry? Let's decide what you should make today." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTu-Sc-ijw">
                                                 <rect key="frame" x="0.0" y="0.0" width="339.66666666666669" height="52.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
+                                                <color key="textColor" red="0.19973018589500818" green="0.063710185578338185" blue="0.36294363423930709" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="highlightedColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="129" translatesAutoresizingMaskIntoConstraints="NO" id="6oD-8r-YvT">
                                                 <rect key="frame" x="30.333333333333343" y="102.33333333333333" width="279" height="52.333333333333329"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bi4-1b-9Zf">
                                                         <rect key="frame" x="0.0" y="0.0" width="75" height="52.333333333333336"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="52.333333333333336" id="KR6-Vy-IFc"/>
+                                                        </constraints>
+                                                        <color key="tintColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                                             <backgroundConfiguration key="background">
-                                                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.20026278333599065" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="backgroundColor" white="1" alpha="0.20637605628188777" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
                                                         </buttonConfiguration>
                                                         <connections>
@@ -48,10 +52,11 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQ6-pl-0v5">
                                                         <rect key="frame" x="204" y="0.0" width="75" height="52.333333333333336"/>
+                                                        <color key="tintColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                                             <backgroundConfiguration key="background">
-                                                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.20182073683965773" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="backgroundColor" white="1" alpha="0.19524658618330146" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
                                                         </buttonConfiguration>
                                                         <connections>
@@ -62,15 +67,15 @@
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxg-9B-8QH">
                                                 <rect key="frame" x="132.33333333333334" y="204.66666666666669" width="75" height="52.333333333333314"/>
+                                                <color key="tintColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                                     <backgroundConfiguration key="background">
-                                                        <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.19787566515864158" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="1" alpha="0.20418439592633927" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </backgroundConfiguration>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="decisionBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cVp-LM-H2S"/>
-                                                    <action selector="option1Btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nqH-Dg-NHk"/>
                                                 </connections>
                                             </button>
                                         </subviews>

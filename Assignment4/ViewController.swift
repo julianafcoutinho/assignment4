@@ -40,7 +40,8 @@ class ViewController: UIViewController {
             btn1.setTitle(":)", for: .normal)
             btn2.setTitle(":)", for: .normal)
             decision.setTitle("Restart", for: .normal)
-            label.text = "You will be making " + recipeLogic.getRecipe(bake, sweet, ingredient)
+            label.text = "You will be making " + (recipeLogic.getRecipe(bake, sweet, ingredient)?.recipeName ?? "recipe not found...here's some macarons.")
+            image.image = UIImage(named:(recipeLogic.getRecipe(bake, sweet, ingredient)?.fileName) ?? "notfound")
             image.isHidden = false
             
         }
